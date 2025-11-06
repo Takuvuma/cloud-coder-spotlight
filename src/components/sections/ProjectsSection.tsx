@@ -38,7 +38,7 @@ export const ProjectsSection = () => {
         
         <div className="space-y-6">
           {projects.map((project, index) => (
-            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">{project.title}</h3>

@@ -33,15 +33,23 @@ export const IntroSection = () => {
   }, []);
 
   return (
-    <section id="intro" className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-4xl w-full text-center">
+    <section id="intro" className="min-h-screen flex items-center justify-center px-6 relative">
+      <div className="max-w-4xl w-full text-center relative z-10">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-foreground min-h-[4rem] md:min-h-[5rem]">
             {displayText}
             <span className="animate-pulse">|</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-2 min-h-[2rem]">
-            {displaySubtext}
+          <p className="text-xl md:text-2xl mb-2 min-h-[2rem]">
+            <span className="text-muted-foreground">{displaySubtext.split('|')[0]}</span>
+            {displaySubtext.includes('|') && (
+              <>
+                <span className="text-muted-foreground"> | </span>
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent font-bold">
+                  {displaySubtext.split('|')[1]}
+                </span>
+              </>
+            )}
             {displaySubtext.length > 0 && displaySubtext.length < subtitle.length && (
               <span className="animate-pulse">|</span>
             )}
@@ -52,10 +60,18 @@ export const IntroSection = () => {
         </div>
 
         <div className="flex flex-wrap gap-4 justify-center mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-          <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 transition-all">
+          <Button 
+            asChild 
+            size="lg" 
+            className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-[var(--glow-primary)] hover:shadow-[0_0_30px_hsl(270_80%_60%_/_0.6)]"
+          >
             <a href="#contact">Get in Touch</a>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all">
+          <Button 
+            asChild 
+            size="lg" 
+            className="bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all shadow-[0_0_20px_hsl(280_85%_65%_/_0.4)] hover:shadow-[0_0_30px_hsl(280_85%_65%_/_0.6)]"
+          >
             <a href="#projects">View Projects</a>
           </Button>
         </div>

@@ -1,4 +1,5 @@
 import { PortfolioSidebar } from "@/components/PortfolioSidebar";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { IntroSection } from "@/components/sections/IntroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
@@ -9,10 +10,11 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex min-h-screen w-full relative">
+      <AnimatedBackground />
       <PortfolioSidebar />
       
-      <main className="flex-1 md:ml-64">
+      <main className="flex-1 md:ml-64 relative z-10">
         <IntroSection />
         <AboutSection />
         <ProjectsSection />

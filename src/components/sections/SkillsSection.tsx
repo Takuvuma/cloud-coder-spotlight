@@ -43,10 +43,10 @@ export const SkillsSection = () => {
         
         <div className="grid gap-6 md:grid-cols-2">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-foreground rounded-lg">
-                  <category.icon className="h-5 w-5 text-background" />
+                <div className="p-2 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                  <category.icon className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <h3 className="text-lg font-semibold">{category.title}</h3>
               </div>
@@ -61,7 +61,7 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <Card className="p-6 mt-6 shadow-[var(--shadow-card)]">
+        <Card className="p-6 mt-6 shadow-[var(--shadow-card)] bg-card/50 backdrop-blur-sm border-primary/20">
           <h3 className="text-lg font-semibold mb-3">Relevant Coursework</h3>
           <div className="flex flex-wrap gap-2">
             {[

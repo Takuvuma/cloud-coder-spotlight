@@ -9,10 +9,10 @@ export const ContactSection = () => {
         <h2 className="section-title">Get in Touch</h2>
         
         <div className="grid gap-6 md:grid-cols-2">
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <Mail className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <Mail className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">Email</h3>
@@ -23,10 +23,10 @@ export const ContactSection = () => {
             </div>
           </Card>
 
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <Phone className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <Phone className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">Phone</h3>
@@ -37,10 +37,10 @@ export const ContactSection = () => {
             </div>
           </Card>
 
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <Linkedin className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <Linkedin className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
@@ -56,10 +56,10 @@ export const ContactSection = () => {
             </div>
           </Card>
 
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <Github className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <Github className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">GitHub</h3>
@@ -76,10 +76,10 @@ export const ContactSection = () => {
           </Card>
         </div>
 
-        <Card className="p-6 mt-6 shadow-[var(--shadow-card)]">
+        <Card className="p-6 mt-6 shadow-[var(--shadow-card)] bg-card/50 backdrop-blur-sm border-primary/20">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-foreground rounded-lg">
-              <MapPin className="h-6 w-6 text-background" />
+            <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+              <MapPin className="h-6 w-6 text-primary-foreground" />
             </div>
             <div className="flex-1">
               <h3 className="font-semibold mb-2">Location</h3>
@@ -92,7 +92,11 @@ export const ContactSection = () => {
           <p className="text-muted-foreground mb-4">
             I'm always open to discussing new opportunities, collaborations, or just connecting!
           </p>
-          <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 transition-all">
+          <Button 
+            asChild 
+            size="lg" 
+            className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all shadow-[var(--glow-primary)] hover:shadow-[0_0_30px_hsl(270_80%_60%_/_0.6)]"
+          >
             <a href="mailto:takudzwa.vuma@talladega.edu">Send Message</a>
           </Button>
         </div>

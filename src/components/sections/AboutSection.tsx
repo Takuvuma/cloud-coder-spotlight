@@ -8,10 +8,10 @@ export const AboutSection = () => {
         <h2 className="section-title">About Me</h2>
         
         <div className="grid gap-6 mb-8">
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <GraduationCap className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <GraduationCap className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Education</h3>
@@ -25,10 +25,10 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <MapPin className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <MapPin className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Location</h3>
@@ -40,10 +40,10 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
+          <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-foreground rounded-lg">
-                <Award className="h-6 w-6 text-background" />
+              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+                <Award className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-3">Certifications</h3>
@@ -59,7 +59,7 @@ export const AboutSection = () => {
           </Card>
         </div>
 
-        <Card className="p-6 shadow-[var(--shadow-card)]">
+        <Card className="p-6 shadow-[var(--shadow-card)] bg-card/50 backdrop-blur-sm border-primary/20">
           <h3 className="text-xl font-semibold mb-4">Leadership & Campus Involvement</h3>
           <div className="space-y-4 text-muted-foreground">
             <div>

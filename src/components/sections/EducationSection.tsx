@@ -7,10 +7,10 @@ export const EducationSection = () => {
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title">Education</h2>
         
-        <Card className="p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 mb-6">
+        <Card className="p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 mb-6 bg-card/50 backdrop-blur-sm border-primary/20">
           <div className="flex items-start gap-4 mb-6">
-            <div className="p-4 bg-foreground rounded-lg">
-              <GraduationCap className="h-8 w-8 text-background" />
+            <div className="p-4 bg-gradient-to-br from-primary to-accent rounded-lg shadow-[var(--glow-primary)]">
+              <GraduationCap className="h-8 w-8 text-primary-foreground" />
             </div>
             <div className="flex-1">
               <h3 className="text-2xl font-bold mb-2">Talladega College</h3>

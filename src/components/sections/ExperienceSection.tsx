@@ -36,7 +36,7 @@ export const ExperienceSection = () => {
         
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
+            <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 bg-card/50 backdrop-blur-sm border-primary/20">
               <div className="mb-4">
                 <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
                 <div className="flex flex-wrap gap-4 text-muted-foreground text-sm">
