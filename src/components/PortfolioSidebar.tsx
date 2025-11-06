@@ -21,7 +21,7 @@ export const PortfolioSidebar = () => {
   const SidebarContent = () => (
     <div className="flex flex-col h-full">
       <div className="p-6 border-b border-sidebar-border">
-        <h2 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <h2 className="text-xl font-bold text-foreground">
           Sections
         </h2>
       </div>

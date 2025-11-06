@@ -45,8 +45,8 @@ export const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <Card key={index} className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 bg-gradient-to-br from-primary to-accent rounded-lg">
-                  <category.icon className="h-5 w-5 text-primary-foreground" />
+                <div className="p-2 bg-foreground rounded-lg">
+                  <category.icon className="h-5 w-5 text-background" />
                 </div>
                 <h3 className="text-lg font-semibold">{category.title}</h3>
               </div>

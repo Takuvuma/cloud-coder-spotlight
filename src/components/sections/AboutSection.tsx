@@ -10,8 +10,8 @@ export const AboutSection = () => {
         <div className="grid gap-6 mb-8">
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <GraduationCap className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <GraduationCap className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Education</h3>
@@ -27,8 +27,8 @@ export const AboutSection = () => {
 
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <MapPin className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <MapPin className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Location</h3>
@@ -42,8 +42,8 @@ export const AboutSection = () => {
 
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-shadow duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <Award className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <Award className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-3">Certifications</h3>

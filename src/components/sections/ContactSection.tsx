@@ -11,8 +11,8 @@ export const ContactSection = () => {
         <div className="grid gap-6 md:grid-cols-2">
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <Mail className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <Mail className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">Email</h3>
@@ -25,8 +25,8 @@ export const ContactSection = () => {
 
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <Phone className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <Phone className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">Phone</h3>
@@ -39,8 +39,8 @@ export const ContactSection = () => {
 
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <Linkedin className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <Linkedin className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
@@ -58,8 +58,8 @@ export const ContactSection = () => {
 
           <Card className="p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-                <Github className="h-6 w-6 text-primary-foreground" />
+              <div className="p-3 bg-foreground rounded-lg">
+                <Github className="h-6 w-6 text-background" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold mb-2">GitHub</h3>
@@ -78,8 +78,8 @@ export const ContactSection = () => {
 
         <Card className="p-6 mt-6 shadow-[var(--shadow-card)]">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-lg">
-              <MapPin className="h-6 w-6 text-primary-foreground" />
+            <div className="p-3 bg-foreground rounded-lg">
+              <MapPin className="h-6 w-6 text-background" />
             </div>
             <div className="flex-1">
               <h3 className="font-semibold mb-2">Location</h3>
@@ -92,7 +92,7 @@ export const ContactSection = () => {
           <p className="text-muted-foreground mb-4">
             I'm always open to discussing new opportunities, collaborations, or just connecting!
           </p>
-          <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity">
+          <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 transition-all">
             <a href="mailto:takudzwa.vuma@talladega.edu">Send Message</a>
           </Button>
         </div>

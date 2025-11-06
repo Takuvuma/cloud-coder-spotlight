@@ -9,8 +9,8 @@ export const EducationSection = () => {
         
         <Card className="p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 mb-6">
           <div className="flex items-start gap-4 mb-6">
-            <div className="p-4 bg-gradient-to-br from-primary to-accent rounded-lg">
-              <GraduationCap className="h-8 w-8 text-primary-foreground" />
+            <div className="p-4 bg-foreground rounded-lg">
+              <GraduationCap className="h-8 w-8 text-background" />
             </div>
             <div className="flex-1">
               <h3 className="text-2xl font-bold mb-2">Talladega College</h3>
